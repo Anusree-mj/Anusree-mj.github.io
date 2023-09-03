@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.3;
+  color: #292929;
+}
+
+.sec-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/starting\ background.jpg);
+  height: 110vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  width: 1000px;
+  max-width: 90%;
+  height: 6rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+}
+
+.logo {
+  height: 5rem;
+}
+
+.header-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.language {
+  padding: 0.5rem 1rem;
+  background-color: rgba(250, 235, 215, 0);
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.button {
+  background-color: red;
+  padding: 0.5rem 0.8rem;
+  border: solid 1px red;
+  border-radius: 0.4rem;
+}
+
+.signin {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgba(255, 0, 0, 0.733);
+}
+
+.title {
+  width: 1000px;
+  max-width: 100%;
+  height: 70%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.main-head {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.main-subhead {
+  font-size: 24px;
+}
+
+.main-endhead {
+  font-size: 20px;
+}
+
+.email-start {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.email {
+  padding: 1rem 1rem;
+  width: 20rem;
+  max-width: 100%;
+  font-size: 1.1rem;
+  margin: 1rem 0rem 0rem 0rem;
+  background-color: rgba(15, 15, 15, 0.507);
+  outline: none;
+  border: solid 1px rgba(241, 241, 241, 0.733);
+  border-radius: 0.4rem;
+}
+
+.email:focus {
+  border: solid 2px white;
+  outline: white;
+}
+
+.start {
+  margin: 1rem 1.5rem 0rem 1.5rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.5rem;
+}
+
+.start-txt {
+  padding: 0.85rem 2rem;
+}
+
+.start:hover {
+  background-color: rgba(255, 0, 0, 0.678);
+}
+
+@media only screen and (max-width: 992px) {
+  .sec-1 {
+    height: 100%;
+  }
+
+  .language {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  .main-head {
+    font-size: 2rem;
+  }
+
+  .main-subhead {
+    font-size: 18px;
+  }
+
+  .main-endhead {
+    font-size: 18px;
+  }
+}
