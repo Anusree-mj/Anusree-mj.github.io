@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+.main {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 45%;
+}
+.fb-logo {
+  width: 250px;
+  max-width: 80%;
+}
+.subheading {
+  font-weight: normal;
+  text-align: left;
+  font-size: 1.75rem;
+  margin: 1.75rem;
+}
+.inbox {
+  width: 350px;
+  height: fit-content;
+  border: 1px solid white;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 0.2rem #888888;
+}
+.login-form {
+  text-align: center;
+}
+
+.input-field {
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: solid 1px rgb(211, 206, 206);
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.input-field:focus {
+  outline: none;
+  border: 1px solid #2a7deb;
+}
+.login-button {
+  height: 2.8rem;
+  background-color: #2a7deb;
+  border-radius: 0.4rem;
+  border: 1px solid #2a7deb;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.forgot-password {
+  text-decoration: none;
+  color: #2a7deb;
+  font-size: 13px;
+}
+.hr {
+  width: 100%;
+  border-top: 1px solid rgb(211, 206, 206);
+}
+.create-button {
+  height: 2.4rem;
+  width: fit-content;
+  border-radius: 0.4rem;
+  background-color: #42b72a;
+  border: 1px solid #42b72a;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+.outerbox {
+  font-weight: bold;
+  color: rgb(48, 46, 46);
+  font-size: 15px;
+  text-decoration: none;
+  margin: 2rem 0;
+  font-size: smaller;
+}
+.createPage {
+  color: rgb(14, 13, 13);
+  font-size: 16px;
+  text-decoration: none;
+}
