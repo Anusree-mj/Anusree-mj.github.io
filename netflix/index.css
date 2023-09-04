@@ -46,8 +46,8 @@ body {
   padding: 0.5rem 1rem;
   color: white;
   background-color: rgba(250, 235, 215, 0);
-  font-size: 1.1rem;
-  border-radius: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
   margin-right: 1rem;
 }
 
@@ -107,7 +107,7 @@ body {
 .email {
   padding: 1rem 1rem;
   width: 20rem;
-  max-width: 100%;
+  max-width: 80%;
   font-size: 1.1rem;
   margin: 1rem 0rem 0rem 0rem;
   background-color: rgba(15, 15, 15, 0.507);
@@ -152,7 +152,6 @@ body {
 
 .sec2-text {
   text-align: center;
-  color: white;
   display: flex;
   width: 30rem;
   flex-wrap: wrap;
@@ -240,7 +239,6 @@ body {
 
 .sec3-text {
   text-align: start;
-  color: white;
   display: flex;
   width: 30rem;
   max-width: 90%;
@@ -269,7 +267,6 @@ body {
 }
 
 .sec4-text {
-  color: white;
   display: flex;
   width: 30rem;
   flex-wrap: wrap;
@@ -309,6 +306,138 @@ body {
   position: absolute;
   z-index: -1;
   top: 2.5rem;
+}
+
+.sec-5 {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.sec5-img {
+  width: 40rem;
+  max-width: 80%;
+}
+
+.children {
+  width: 25rem;
+  max-width: 80%;
+}
+
+.sec5-text {
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  width: 30rem;
+  max-width: 90%;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+.sec5-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sec5-para {
+  font-size: 1.3rem;
+}
+
+.sec-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 70vh;
+  box-sizing: border-box;
+}
+
+.sec6-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.sec6-button {
+  width: 65rem;
+  margin: 1rem;
+  max-width: 80%;
+  height: 5rem;
+  color: white;
+  background-color: #292929;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec6-button:hover {
+  cursor: pointer;
+  background-color: #363636;
+}
+
+.sec6-sub {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sec6-subhead {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.sec-7 {
+  padding-top: 1rem;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sec7-head {
+  font-size: 1rem;
+  color: rgba(247, 244, 244, 0.849);
+}
+
+.sec7-block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.block1-ul {
+  list-style: none;
+}
+
+.block1-list {
+  margin: 1rem 0;
+}
+
+.block1-link {
+  font-size: 0.9rem;
+  color: rgba(247, 244, 244, 0.849);
+}
+
+.end-index {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: rgba(241, 241, 241, 0.733);
+}
+
+.sec7-block2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 992px) {
@@ -351,5 +480,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .sec-5 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sec-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1rem;
+    max-width: 80%;
+  }
+  .sec6-button{
+    font-size: 1.1rem;
   }
 }
