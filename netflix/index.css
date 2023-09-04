@@ -16,7 +16,7 @@ body {
 .sec-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.699)),
     url(assets/starting\ background.jpg);
-  height: 110vh;
+  min-height: 110vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -71,8 +71,8 @@ body {
 
 .title {
   width: 1000px;
-  max-width: 100%;
-  height: 70%;
+  max-width: 80%;
+  height: 70vh;
   margin: auto;
   text-align: center;
   color: white;
@@ -147,7 +147,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .sec2-text {
@@ -158,6 +158,7 @@ body {
   flex-wrap: wrap;
   box-sizing: border-box;
   margin-top: 2rem;
+  max-width: 90%;
 }
 
 .sec2-video {
@@ -169,19 +170,21 @@ body {
 }
 
 .sec2-img {
-  height: 20rem;
+  width: 23rem;
+  max-width: 100%;
 }
 
 .netflix-video {
-  height: 11rem;
+  width: 18rem;
+  max-width: 90%;
   margin: 1rem;
   position: absolute;
   z-index: -1;
-  top: 3rem;
+  top: 2rem;
 }
 
 .sec2-head {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -196,7 +199,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 70vh;
+  min-height: 70vh;
 }
 
 .sec3-img {
@@ -215,15 +218,16 @@ body {
   padding: 0.4rem 0.7rem;
   max-width: 90%;
   position: relative;
-  top: -6rem;
+  top: -4rem;
 }
 
 .girl-img {
-  height: 20rem;
+  width: 20rem;
+  max-width: 95%;
 }
 
 .st-img {
-  height: 5rem;
+  width: 4rem;
 }
 
 .gif {
@@ -246,7 +250,7 @@ body {
 }
 
 .sec3-head {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -256,9 +260,60 @@ body {
   margin-top: 1rem;
 }
 
+.sec-4 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 70vh;
+}
+
+.sec4-text {
+  color: white;
+  display: flex;
+  width: 30rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  max-width: 90%;
+  text-align: start;
+}
+
+.sec4-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sec4-para {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.sec4-video {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 90%;
+}
+
+.sec4-img {
+  width: 30rem;
+  max-width: 100%;
+}
+
+.film-video {
+  width: 18rem;
+  max-width: 60%;
+  position: absolute;
+  z-index: -1;
+  top: 2.5rem;
+}
+
 @media only screen and (max-width: 992px) {
   .sec-1 {
-    height: 100%;
+    min-height: 90vh;
   }
 
   .language {
@@ -283,22 +338,18 @@ body {
 
   .sec-2 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-  }
-
-  .sec2-text {
-    justify-content: center;
-  }
-
-  .sec2-para {
-    text-align: center;
   }
 
   .sec-3 {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .sec4-text {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
   }
 }
