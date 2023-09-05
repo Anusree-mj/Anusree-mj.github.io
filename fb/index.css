@@ -1,109 +1,202 @@
 body {
   margin: 0;
-  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
+
 .main {
-  margin: 0;
+  background-color: rgb(241, 241, 243);
   width: 100%;
   height: 100vh;
-  background-color: #f0f2f5;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
 }
+
 .logo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 45%;
+  align-items: left;
+  text-align: left;
+  max-width: 40%;
 }
+
 .fb-logo {
-  width: 250px;
+  width: 30rem;
   max-width: 80%;
 }
+
 .subheading {
-  font-weight: normal;
-  text-align: left;
-  font-size: 1.75rem;
-  margin: 1.75rem;
+  font-size: 1.5rem;
+  padding: 0rem 2.5rem;
+  margin-bottom: 5rem;
 }
-.inbox {
-  width: 350px;
-  height: fit-content;
-  border: 1px solid white;
-  box-sizing: border-box;
-  padding: 1rem;
+
+.login-form {
+  width: 25rem;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
-  background-color: white;
   align-items: center;
+  border: 1px solid;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 0.2rem #888888;
+  border: none;
 }
-.login-form {
-  text-align: center;
+
+.inbox {
+  display: flex;
+  padding: 1rem;
+  max-width: 90%;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
 }
 
 .input-field {
-  height: 3rem;
-  border-radius: 0.2rem;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  border: solid 1px rgb(211, 206, 206);
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.input-field:focus {
-  outline: none;
-  border: 1px solid #2a7deb;
-}
-.login-button {
-  height: 2.8rem;
-  background-color: #2a7deb;
+  width: 20rem;
+  max-width: 80%;
   border-radius: 0.4rem;
-  border: 1px solid #2a7deb;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  color: white;
-  font-weight: bold;
-  font-size: 19px;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgb(175, 175, 173);
 }
+
+.input-field::placeholder {
+  color: rgb(136, 136, 134);
+}
+
+.input-field:focus::placeholder {
+  color: rgb(189, 189, 181);
+}
+
+.input-field:focus {
+  outline: 1px solid #1877f2;
+}
+
+.login-button {
+  width: 22rem;
+  max-width: 90%;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgb(175, 175, 173);
+  background-color: #1877f2;
+  color: white;
+  font-size: 1.5rem;
+}
+
 .forgot-password {
   text-decoration: none;
-  color: #2a7deb;
-  font-size: 13px;
+  font-size: 0.9rem;
+  color: #1877f2;
+  margin-top: 0.5r;
 }
-.hr {
-  width: 100%;
-  border-top: 1px solid rgb(211, 206, 206);
+
+.dividing-line {
+  max-width: 90%;
+  color: blue;
+  height: 2px;
+
 }
+
 .create-button {
-  height: 2.4rem;
-  width: fit-content;
-  border-radius: 0.4rem;
+  width: 11rem;
+  max-width: 80%;
+  padding: 1rem;
+  margin-top: 0.5rem;
   background-color: #42b72a;
-  border: 1px solid #42b72a;
   color: white;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.createPage {
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  font-size: 15px;
-  margin: 1rem 0;
-  padding: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .outerbox {
-  font-weight: bold;
-  color: rgb(48, 46, 46);
-  font-size: 15px;
-  text-decoration: none;
-  margin: 2rem 0;
-  font-size: smaller;
+  font-size: 0.8rem;
 }
-.createPage {
-  color: rgb(14, 13, 13);
-  font-size: 16px;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+
+}
+
+.footer-lang {
+  width: 45rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80%;
+}
+
+.lang-list {
+  list-style: none;
+  max-width: 80%;
+
+}
+
+.language {
   text-decoration: none;
+  color: rgb(128, 128, 124);
+  font-size: 0.9rem;
+}
+
+.language:hover {
+  text-decoration: underline;
+}
+
+.footer-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80%;
+  line-height: 1.5rem;
+
+}
+
+.footer-list {
+  list-style: none;
+
+}
+
+.page-end {
+  color: rgb(128, 128, 124);
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .subheading {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    margin-top: 1rem;
+  }
+
+  .footer-lang {
+    flex-direction: column;
+  }
+
+  .not-always {
+    display: none;
+  }
+
 }
