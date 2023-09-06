@@ -94,11 +94,10 @@ body {
   margin-top: 0.5r;
 }
 
-.dividing-line {
+.hr{
+  width: 20rem;
   max-width: 90%;
-  color: blue;
-  height: 2px;
-
+  border:  1px solid rgb(216, 211, 211) ;
 }
 
 .create-button {
@@ -130,7 +129,6 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
-
 }
 
 .footer-lang {
@@ -139,6 +137,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   max-width: 80%;
+  margin-left:8rem ;
 }
 
 .lang-list {
@@ -151,10 +150,16 @@ body {
   text-decoration: none;
   color: rgb(128, 128, 124);
   font-size: 0.9rem;
+  text-align: center;
+  
 }
 
 .language:hover {
   text-decoration: underline;
+}
+.footer-hr{
+  width: 60rem;
+  max-width: 80%;
 }
 
 .footer-contents {
@@ -164,18 +169,20 @@ body {
   align-items: center;
   max-width: 80%;
   line-height: 1.5rem;
+  margin-left:8.8rem ;
+  text-align: left;
 
 }
 
 .footer-list {
   list-style: none;
-
+ 
 }
 
 .page-end {
   color: rgb(128, 128, 124);
   font-size: 0.9rem;
-  margin-left: 1rem;
+  margin-left: 12rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -194,9 +201,28 @@ body {
   .footer-lang {
     flex-direction: column;
   }
-
+  .footer-list{
+   margin-right: 1rem;
+  }
   .not-always {
     display: none;
   }
-
+  .page-end {
+   margin: 0;
+   text-align: center;
+  }
+  
+  .footer-lang {
+    margin: 0;
+  }
+  .footer-contents {
+    margin: 0;
+    
+  }
+.footer-hr{
+  display: none;
+}
+.plus-button{
+  display: none;
+}
 }
