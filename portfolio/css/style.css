@@ -39,6 +39,12 @@ input[type="submit"],ul.address li ul.address-text li a,.agile_about_blog_right_
 	-o-transition: .5s ease-in;
 	-ms-transition: .5s ease-in;
 }
+span{
+	height: 1.5rem;
+	padding: 0.5rem;
+	color: red;
+	font-size: 1rem;
+}
 .banner_body{
 	padding:3em 0 4em;
 }
@@ -327,6 +333,9 @@ ul.address li ul.address-text li a:hover{
 	margin:1em 0 0;
 }
 /*-- blog --*/
+.blog-img-4{
+	margin-top: 3rem
+}
 .agile_about_blog_left_grid{
 	position:relative;
 }
