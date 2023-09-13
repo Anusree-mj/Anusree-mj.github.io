@@ -68,7 +68,7 @@ body {
   width: 100%;
 }
 
-.email-label {
+.label {
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -378,7 +378,8 @@ body {
 }
 
 .join-section-head {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .get-started {
@@ -422,6 +423,7 @@ body {
   .logo {
     height: 22px;
   }
+  
 }
 
 @media only screen and (max-width: 768px) {

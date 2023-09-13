@@ -1,13 +1,16 @@
-function myFunction() {
-    let text = document.getElementById("my-password");
-     if(text.type=="password"){ 
-        document.getElementById("visibility").innerHTML = "Hide";
-     text.type="text";
-    console.log(text.value);
-    }else{
-     text.type="password";
-     document.getElementById("visibility").innerHTML = "Show";
+let password = document.getElementById("my-password");
+let email = document.getElementById("my-email");
 
-    
-}
+
+function myFunction() {
+
+   if (password.type == "password") {
+      document.getElementById("visibility").innerHTML = "Hide";
+      password.type = "text";
+      console.log(password.value);
+   } else {
+      password.type = "password";
+      document.getElementById("visibility").innerHTML = "Show";
+   }
+
 }
