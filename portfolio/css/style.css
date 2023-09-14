@@ -35,12 +35,22 @@ body a:hover{
 .profile-img{
 	position: relative;
 	left: 4rem;
+	width: 25rem;
+	
 }
 
 .circle-profile{
 	width: 9rem;
 	position: relative;
 	right: 1rem;
+}
+.aboutme-para{
+	color: black !important;
+	font-weight: 400 !important;
+}
+.aboutme-head{
+	font-weight:bolder;
+	font-size: 1.3rem !important;
 }
 input[type="submit"],ul.address li ul.address-text li a,.agile_about_blog_right_grid a,.agileits_copyright p a,.agileinfo_map_color_grid_left p a,.wthree_tab_content_pos1 ul li a{
 	transition: .5s ease-in;
@@ -90,6 +100,8 @@ input[type="submit"],ul.address li ul.address-text li a,.agile_about_blog_right_
 }
 
 .resp-tab-item {
+	
+	font-weight: 700!important;
     cursor: pointer;
     display: inline-block;
     margin: 0;
@@ -189,6 +201,7 @@ h2.resp-accordion {
 .wthree_tab_content_pos_grid{
 	padding: 1.5em;
     border: 4px double #fff;
+	box-shadow: 10px 10px 10rem rgb(131, 131, 131);
 }
 .wthree_tab_content_pos_grid h2 {
     font-size: 1.2em;
@@ -234,7 +247,7 @@ ul.address li ul.address-text li {
     display: inline-block;
     color: #fff;
     margin-top: 1em;
-    font-weight: 100;
+    font-weight: 600;
 }
 ul.address li ul.address-text li a {
     color: #fff;
@@ -263,6 +276,7 @@ ul.address li ul.address-text li a:hover{
 .agile_about,.agileits_agile_about{
 	padding:2em;
 	background:#fff;
+	box-shadow: 0rem 0rem 1rem rgb(61, 62, 63);
 	width: 75%;
 }
 .agile_about{
@@ -319,6 +333,7 @@ ul.address li ul.address-text li a:hover{
     margin: 1em 0 0;
     height: 20px;
     background: #EBEBEB;
+	box-shadow: 0 0 0.5rem rgb(155, 155, 155);
 }
 .skills,.skills1,.skills2,.skills3,.skills4{
 	position:relative;
@@ -329,21 +344,33 @@ ul.address li ul.address-text li a:hover{
 	left:5%;
 }
 .bar p{ 
-	color: #212121;
+	color: #ffffff;
     font-size: 13px;
+	font-weight: 700;
 	text-transform:uppercase;
 }
 .skill1,.skill3,.skill4,.skill5 {
 	height: 100%;
 	display: block;
-	background-color:#F1DE00;
+	background-color:#11b5df;
 }
 .agileits_skills_grids{
 	margin:1em 0 0;
+	
 }
 /*-- blog --*/
-.blog-img-4{
-	margin-top: 3rem
+.blog-img{
+	margin-top: 3rem;
+	box-shadow: 0 0 1.5rem black;
+    width: 20rem;
+	border: 2px solid #11b5df;
+}
+.input-box{
+	border: 1px solid rgba(161, 159, 159, 0.664) !important;
+	border-radius: 0.2rem;
+    box-shadow: 0 0 0.1rem rgb(143, 143, 143);
+}
+.submit-field{
 }
 .agile_about_blog_left_grid{
 	position:relative;
@@ -451,6 +478,10 @@ ul.address li ul.address-text li a:hover{
    overflow: hidden;
    top: 0;
    left: 0;
+}
+.work_container{
+	border: solid 1px rgb(122, 122, 122);
+	box-shadow: 0rem 0rem 10rem rgba(85, 85, 85, 0.973);
 }
 .view img {
    display: block;
@@ -704,6 +735,7 @@ ul.address li ul.address-text li a:hover{
 		padding: 3em 0 0;
 	}
 }
+/* changehere */
 @media (max-width: 768px){
 	.wthree_tab_content img {
 		margin-left: 6.5em;
@@ -713,6 +745,10 @@ ul.address li ul.address-text li a:hover{
 	}
 	.wthree_tab_content_pos1 {
 		right:-16%;
+	}
+	.profile-img{
+		left: 0;
+		margin-bottom: 0.5rem;
 	}
 }
 @media (max-width: 736px){
@@ -870,6 +906,7 @@ ul.address li ul.address-text li a:hover{
 	}
 	.agileits_agile_about_portfolio_left {
 		width: 93%;
+		
 	}
 	.agileinfo_map_color_grid_left {
 		float: none;
@@ -928,6 +965,7 @@ ul.address li ul.address-text li a:hover{
 		width: 100%;
 		display: block;
 		padding: .5em 0;
+	
 	}
 	.resp-tab-active, .resp-tab-item:hover {
 		text-shadow: none;
@@ -956,6 +994,7 @@ ul.address li ul.address-text li a:hover{
 	}
 	.agileits_agile_about_portfolio_left {
 		width: 100%;
+		
 	}
 }
 @media (max-width: 375px){
@@ -1001,7 +1040,8 @@ ul.address li ul.address-text li a:hover{
 		font-size: 13px;
 	}
 	ul.address li ul.address-text li {
-		font-size: 11px;
+		font-size: 12px;
+		
 	}
 	.wthree_tab_content {
 		padding-bottom: 18em;
@@ -1037,6 +1077,7 @@ ul.address li ul.address-text li a:hover{
 	}
 	.agileits_agile_about_portfolio_left {
 		padding: 0;
+		
 	}
 	.second-effect:hover .mask {
 		border: 50px solid rgba(35, 214, 231, 0.64);
