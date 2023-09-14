@@ -4,11 +4,18 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
+.span{
+  height: 1rem;
+  color: red;
+  font-size: 1rem;
+}
 
 .logo {
   margin-left: 1rem;
 }
-
+.show:hover{
+  border: none !important;
+}
 .common-width {
   width: 100%;
   max-width: 1200px;
@@ -68,7 +75,7 @@ body {
   width: 100%;
 }
 
-.email-label {
+.label {
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -80,6 +87,7 @@ body {
 
 .boxform {
   width: 100%;
+  padding: 1rem;
   height: 3rem;
   border-radius: 0.2rem;
   border: 1px solid rgb(71, 70, 70);
@@ -97,7 +105,7 @@ body {
 
 .show {
   border: none;
-  background-color: rgb(253, 253, 253);
+  background-color: rgba(255, 255, 255, 0);
   color: #085bad;
   font-weight: bold;
   position: absolute;
@@ -105,9 +113,10 @@ body {
   top: 0.8rem;
 }
 
-.show:hover {
+.show:focus {
   border: none;
   outline: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .forgot-passwrd {
@@ -169,6 +178,8 @@ body {
   color: black;
   font-weight: bolder;
   border: 1.5px solid black;
+  background-color: #f3f2ef;
+
 }
 
 .explore-section {
@@ -378,7 +389,8 @@ body {
 }
 
 .join-section-head {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .get-started {
@@ -422,6 +434,7 @@ body {
   .logo {
     height: 22px;
   }
+  
 }
 
 @media only screen and (max-width: 768px) {
