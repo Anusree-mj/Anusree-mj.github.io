@@ -20,34 +20,34 @@ function handleSubmit() {
     let nameValue = document.getElementById("name").value;
     if (nameValue == "") {
         isError = true
-        document.getElementById("nameSpan").textContent = "*This field should be filled"
+        document.getElementById("nameSpan").textContent = "*Please fill this field"
     } else {
         document.getElementById("nameSpan").textContent = ""
     }
     let subjectValue = document.getElementById("subject").value;
     if (subjectValue == "") {
         isError = true
-        document.getElementById("subjectSpan").textContent = "*This field should be filled"
+        document.getElementById("subjectSpan").textContent = "*Please fill this field"
     } else {
         document.getElementById("subjectSpan").textContent = ""
     }
     let emailValue = document.getElementById("email").value;
     if (emailValue == "") {
         isError = true
-        document.getElementById("emailSpan").textContent = "*This field should be filled"
+        document.getElementById("emailSpan").textContent = "*Please fill this field"
     } else if (!isValidEmail(emailValue)) {
         isError = true
-        document.getElementById("emailSpan").textContent = "*This field should be in the format of email"
+        document.getElementById("emailSpan").textContent = "*Please give a valid email-id"
     } else {
         document.getElementById("emailSpan").textContent = ""
     }
     let phoneValue = document.getElementById("phone").value;
     if (phoneValue == "") {
         isError = true
-        document.getElementById("phoneSpan").textContent = "*This field should be filled"
+        document.getElementById("phoneSpan").textContent = "*Please fill this field"
     } else if (!isValidPhone(phoneValue)) {
         isError = true
-        document.getElementById("phoneSpan").textContent = "*This field should only contain numbers"
+        document.getElementById("phoneSpan").textContent = "*Please give a valid phone number"
     } else {
         document.getElementById("phoneSpan").textContent = ""
     }
@@ -55,7 +55,7 @@ function handleSubmit() {
     let textValue = document.getElementById("textarea").value;
     if (textValue == "") {
         isError = true
-        document.getElementById("textAreaSpan").textContent = "*This field should be filled"
+        document.getElementById("textAreaSpan").textContent = "*Please fill this field"
     }
     else {
         document.getElementById("textAreaSpan").textContent = ""

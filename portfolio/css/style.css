@@ -32,6 +32,16 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
+.profile-img{
+	position: relative;
+	left: 4rem;
+}
+
+.circle-profile{
+	width: 9rem;
+	position: relative;
+	right: 1rem;
+}
 input[type="submit"],ul.address li ul.address-text li a,.agile_about_blog_right_grid a,.agileits_copyright p a,.agileinfo_map_color_grid_left p a,.wthree_tab_content_pos1 ul li a{
 	transition: .5s ease-in;
 	-webkit-transition: .5s ease-in;
@@ -39,11 +49,10 @@ input[type="submit"],ul.address li ul.address-text li a,.agile_about_blog_right_
 	-o-transition: .5s ease-in;
 	-ms-transition: .5s ease-in;
 }
-span{
+.contact-span{
 	height: 1.5rem;
-	padding: 0.5rem;
 	color: red;
-	font-size: 1rem;
+	font-size: 0.9rem;
 }
 .banner_body{
 	padding:3em 0 4em;
