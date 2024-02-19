@@ -1,0 +1,21 @@
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var finalString = function (s) {
+    let resultStr = ''
+    s = s.split('');
+    const reverseString = (string) => {
+        return string.split('').reverse().join('');
+    }
+
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === 'i') {
+           resultStr= reverseString(resultStr);
+        } else {
+            resultStr += s[i];
+        }
+    }
+
+    return resultStr;
+};
